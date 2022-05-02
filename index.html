@@ -355,9 +355,30 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form">
+                <form class="footer-form-subs">
+                    <label for="footer-form-subscribe">Подпишитесь на рассылку</label>
+                    <div class="footer-form-field">
+                    <input
+                    name="email" 
+                    type="email" 
+                    id="footer-form-subscribe"
+                    placeholder="E-mail"
+                    class="footer-form-input"
+                    />
+                    <button type="submit" class="footer-form-btn">
+                        Подписаться
+                        <svg class="footer-form-icon" width="24" height="24">
+                            <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                    </div>
+                </form>
+            </div>
             </div>
         </div>
     </footer>
+    <!------------- MODAL ----------->
     <div class="overlay is-hidden" data-modal>
     <div class="modal">
         <button class="close-button" type="button" data-modal-close>
@@ -365,6 +386,81 @@
                 <use href="./images/icons/symbol-defs.svg#icon-close"></use>
             </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+        <form class="modal-form">
+            <div class="form-field">
+                <label class="input-text" for="user-name">Имя</label>
+                <div class="input-wrap">
+                    <input 
+                    id="user-name"
+                    name="user-name"
+                    type="text"
+                    class="modal-input"
+                    placeholder=""
+                    />
+                    <svg class="input-icon" width="18" height="18">
+                        <use href="./images/icons/symbol-defs.svg#icon-person"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-field">
+                <label class="input-text" for="user-tel">Телефон</label>
+                <div class="input-wrap">
+                    <input 
+                    id="user-tel" 
+                    name="user-tel" 
+                    type="tel" 
+                    class="modal-input" 
+                    placeholder="" 
+                    />
+                    <svg class="input-icon" width="18" height="18">
+                        <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-field">
+                <label class="input-text" for="user-email">Почта</label>
+                <div class="input-wrap">
+                    <input 
+                    id="user-email" 
+                    name="user-email" 
+                    type="email" 
+                    class="modal-input" 
+                    placeholder=""
+                    />
+                    <svg class="input-icon" width="18" height="18">
+                        <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-field">
+                <label class="input-text" for="user-text">Комментарий</label>
+                <div class="input-wrap">
+                    <textarea 
+                    class="modal-text"
+                    name="user-text"
+                    id="user-text"
+                    placeholder="Введите текст" 
+                    ></textarea>
+                </div>
+            </div>
+            <div class="form-field">
+                    <input
+                    type="checkbox"
+                    class="modal-check visually-hidde" 
+                    name="privacy-check" 
+                    id="modal-check" 
+                    />
+                    <label class="modal-check" for="modal-check-text">
+                    <span>
+                        <svg class="check-icon" width="16" height="15">
+                            <use href="./images/icons/symbol-defs.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    </label>
+            </div>
+            <button type="submit" class="modal-btn">Отправить</button>
+        </form>
     </div>
     </div>
     <script src="./js/modal.js"></script>
