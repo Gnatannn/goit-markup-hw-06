@@ -977,14 +977,14 @@ body {
   border-color: var(--main-blue);
 }
 
-.form-field-last {
+.form-field-check {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.modal-check {
+/* .modal-check {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -993,14 +993,19 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   
-}
+} */
 
 .modal-check-text {
-  font-size: 14px;
-  color: #555555;
   display: flex;
+  justify-content: center;
   align-items: center;
-  position: relative;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .modal-check-text span {
